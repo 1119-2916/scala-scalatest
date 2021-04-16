@@ -23,4 +23,8 @@ sealed case class IntegerClosedInterval(left:Int, right:Int) {
   def isInside(num:Int): Boolean = {
     left <= num && num <= right
   }
+
+  def isInside(arg:IntegerClosedInterval): Boolean = {
+    left <= arg.left && arg.right <= right
+  }
 }
