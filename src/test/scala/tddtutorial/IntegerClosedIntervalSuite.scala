@@ -16,7 +16,7 @@ class IntegerClosedIntervalSuite extends FunSuite {
     integerClosedInterval2.toString shouldBe "[4,8]"
   }
 
-  test("整数の閉区間は指定した整数を含むかどうかを判定できる。") {
+  test("整数の閉区間は指定した整数を含むかどうかを判定する。") {
     // 準備
     val integerClosedInterval = IntegerClosedInterval(3, 8)
     // 実行, 確認
