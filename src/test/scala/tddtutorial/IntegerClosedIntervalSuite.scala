@@ -28,7 +28,7 @@ class IntegerClosedIntervalSuite extends FunSuite {
     an[IllegalArgumentException] should be thrownBy IntegerClosedInterval(8, 7)
   }
 
-  test("別の閉区間と一致しているか判定する。") {
+  test("別の閉区間と等価か判定する。") {
     val integerClosedInterval = IntegerClosedInterval(-1, 1)
     integerClosedInterval.equals(IntegerClosedInterval(-1, 1)) shouldBe true
     integerClosedInterval.equals(IntegerClosedInterval(0, 1)) shouldBe false
