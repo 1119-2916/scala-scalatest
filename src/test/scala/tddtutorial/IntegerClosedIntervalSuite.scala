@@ -34,4 +34,9 @@ class IntegerClosedIntervalSuite extends FunSuite {
     integerClosedInterval.equals(IntegerClosedInterval(0, 1)) shouldBe false
   }
 
+  test("別の閉区間を完全に含んでいるか判定する。") {
+    val integerClosedInterval = IntegerClosedInterval(1, 10)
+    integerClosedInterval.isInside(IntegerClosedInterval(2,3)) shouldBe true
+    integerClosedInterval.isInside(IntegerClosedInterval(0,1)) shouldBe false
+  }
 }
